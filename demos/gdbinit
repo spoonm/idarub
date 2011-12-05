@@ -1,0 +1,25 @@
+set disassembly-flavor intel
+
+define idadumppc
+	dump value /tmp/idarubgdb $pc
+end
+
+define idabreak
+	shell ~/idarub/demos/gdbexec.rb "out('break *0x%08x' % ida.get_screen_ea)"
+	source /tmp/idarubgdb
+end
+
+define idafollow
+	idadumppc
+	shell ~/idarub/demos/gdbexec.rb "ida.jumpto(pc)"
+end
+
+define idasi
+	si
+	idafollow
+end
+
+define idacmt
+	idadumppc
+	shell ~/idarub/demos/gdbexec.rb "ida.set_cmt(pc, ARGV[1], false)" $arg0
+end

@@ -1,0 +1,2233 @@
+diff -ur --strip-trailing-cr include-orig/allins.hpp include-swig/allins.hpp
+--- include-orig/allins.hpp	2006-07-31 18:49:14.022067200 -0700
++++ include-swig/allins.hpp	2006-07-31 18:49:13.681577600 -0700
+@@ -7,8 +7,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ NN_null = 0,            // Unknown Operation
+@@ -690,8 +688,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ I5_null = 0,            // Unknown Operation
+@@ -993,8 +989,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ I860_null = 0,          // Unknown Operation
+@@ -1162,8 +1156,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ I51_null = 0,   // Unknown Operation
+@@ -1251,8 +1243,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ TMS_null = 0,   // Unknown Operation
+@@ -1549,8 +1539,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ M65_null = 0,           // Unknown Operation
+@@ -1692,8 +1680,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ pdp_null = 0,           // Unknown Operation
+@@ -1822,8 +1808,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ mc_null = 0,           // Unknown Operation
+@@ -2033,8 +2017,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ mc8_null = 0,           // Unknown Operation
+@@ -2199,7 +2181,6 @@
+ 
+ 
+ 
+-extern instruc_t Instructions[];
+ enum  {
+ //j_null = 0,           // Unknown Operation
+ j_nop = 0,      //  0   //Do nothing
+@@ -2458,8 +2439,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ ARM_null = 0,           // Unknown Operation
+@@ -2592,8 +2571,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ TMS6_null = 0,  // Unknown Operation
+@@ -2686,8 +2663,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+   I196_null = 0,    // Unknown Operation
+ 
+@@ -2871,8 +2846,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ 
+ enum  {
+ 
+@@ -3027,8 +3000,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+   Z8_null = 0,    // Unknown Operation
+ 
+@@ -3096,8 +3067,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ 
+@@ -3240,8 +3209,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ MIPS_null = 0,    // Unknown Operation
+@@ -3837,8 +3804,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ 
+@@ -3945,8 +3910,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ 
+@@ -4138,8 +4101,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ SPARC_null = 0,   // Unknown Operation
+@@ -4396,8 +4357,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ HPPA_null = 0,     // Unknown Operation
+@@ -4569,8 +4528,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ 
+@@ -4690,8 +4647,6 @@
+ 
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ DSP56_null = 0,     // Unknown Operation
+@@ -4842,8 +4797,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ 
+@@ -4969,8 +4922,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ ST20_null = 0,      // Unknown Operation
+@@ -5211,8 +5162,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ ST7_null = 0,           // Unknown Operation
+@@ -5294,8 +5243,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ IA64_null,       //   0
+@@ -5598,8 +5545,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ NET_null = 0,           // Unknown Operation
+@@ -5846,8 +5791,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ MC12_null = 0,          // Unknown Operation
+@@ -6079,8 +6022,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ 
+@@ -6433,8 +6374,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ I960_null = 0,          // Unknown Operation
+@@ -6720,8 +6659,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ 
+@@ -6941,8 +6878,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ TMS320C3X_null = 0,     // Unknown Operation
+@@ -7056,8 +6991,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ 
+@@ -7366,8 +7299,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ 
+@@ -7708,8 +7639,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ TRIMEDIA_null,
+@@ -7942,8 +7871,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ NEC_78K_0_null = 0,       // Unknown Operation                                                                      
+@@ -8038,8 +7965,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ NEC_78K_0S_null = 0,           // Unknown Operation
+@@ -8107,9 +8032,6 @@
+ 
+ 
+ 
+-// exporting the ins.cpp array
+-extern instruc_t Instructions[];
+-
+ // m32r instructions declaration
+ enum  {
+ 
+@@ -8242,8 +8164,6 @@
+ 
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+     m740_null = 0,           // null instruction
+@@ -8325,8 +8245,6 @@
+ 
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+     // 7700 :
+@@ -8460,8 +8378,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ m7900_null = 0,           // Unknown Operation
+@@ -8749,8 +8665,6 @@
+ 
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+     st9_null = 0,           // Unknown Operation.
+     st9_ld,                 // Load.
+@@ -8863,8 +8777,6 @@
+ 
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum namenum {
+     fr_null = 0,            // null instruction
+ 
+@@ -8981,8 +8893,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ ALPHA_null = 0,     // Unknown Operation
+@@ -9219,8 +9129,6 @@
+ 
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ KR1878_null = 0,     // Unknown Operation
+@@ -9289,8 +9197,6 @@
+ 
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum 
+ {
+ AD218X_null = 0,        // Unknown Operation
+@@ -9467,8 +9373,6 @@
+  */
+ 
+ 
+-extern instruc_t Instructions[];
+-
+ enum  {
+ 
+ PPC_null = 0,   // Unknown Operation
+diff -ur --strip-trailing-cr include-orig/area.hpp include-swig/area.hpp
+--- include-orig/area.hpp	2006-07-31 18:49:14.032081600 -0700
++++ include-swig/area.hpp	2006-07-31 18:49:13.681577600 -0700
+@@ -24,7 +24,6 @@
+ // To learn more about Btrees (Balanced Trees):
+ //  http://www.bluerwhite.org/btree/
+ //
+-#include <help.h>
+ #pragma pack(push, 1)           // IDA uses 1 byte alignments!
+ 
+ //--------------------------------------------------------------------------
+@@ -95,18 +94,14 @@
+ decl ea_t    ida_export areacb_t_prepare_to_create(areacb_t *,ea_t start,ea_t end);\
+ decl int     ida_export areacb_t_get_next_area    (areacb_t *,ea_t ea);\
+ decl int     ida_export areacb_t_get_prev_area    (areacb_t *,ea_t ea);\
+-decl bool    ida_export areacb_t_del_area         (areacb_t *,ea_t ea, bool delcmt);\
+ decl bool    ida_export areacb_t_may_start_at     (areacb_t *,uint n,ea_t newstart);\
+ decl bool    ida_export areacb_t_may_end_at       (areacb_t *,uint n,ea_t newend);\
+ decl bool    ida_export areacb_t_set_start        (areacb_t *,uint n,ea_t newstart);\
+ decl bool    ida_export areacb_t_set_end          (areacb_t *,uint n,ea_t newend);\
+ decl bool    ida_export areacb_t_resize_areas     (areacb_t *,uint n,ea_t newstart);\
+ decl uint    ida_export areacb_t_get_area_qty     (areacb_t *);\
+-decl area_t *ida_export areacb_t_choose_area      (areacb_t *,int flags, int width, char *(idaapi*getl)(areacb_t *obj,ulong n,char *buf), const char *title, int icon, int x0,int y0,int x1,int y1, const char * const *popup_menus, ea_t defea);\
+-decl area_t *ida_export areacb_t_choose_area2     (areacb_t *,int flags, int ncol, const int *widths, void (idaapi*getl)(areacb_t *obj,ulong n,char * const *arrptr), const char *title, int icon, int x0,int y0,int x1,int y1, const char * const *popup_menus, ea_t defea);\
+ decl bool    ida_export areacb_t_set_area_cmt     (areacb_t *,const area_t *a, const char *cmt, bool repeatable);\
+ decl char   *ida_export areacb_t_get_area_cmt     (areacb_t *,const area_t *a, bool repeatable);\
+-decl int     ida_export areacb_t_move_areas       (areacb_t *,ea_t from,ea_t to, asize_t size, int (idaapi*area_mover)(area_t *a, adiff_t delta, void *ud), void *ud);\
+ decl void    ida_export areacb_t_make_hole        (areacb_t *,ea_t ea1, ea_t ea2, bool create_tail_area);
+ 
+ class areacb_t;
+@@ -147,54 +142,6 @@
+ 
+ public:
+ 
+-// Read callback: read area from the database.
+-// This function is called when a (possibly packed) area is read from the database.
+-//      packed - stream of packed bytes
+-//      ebd    - ptr to the end of the stream
+-//      a      - place to put unpacked version of the area
+-// This callback may be NULL.
+-
+-  void (idaapi *read_cb)(const uchar *packed, const uchar *end, area_t *a);
+-
+-
+-// Write callback: write area to the database.
+-// This function is called when an area is about to be writed to the database.
+-// It may pack the the area to the stream of bytes.
+-//      a       - area to be written
+-//      packbuf - buffer to hold packed version of the area
+-//      packend - ptr to the end of packbuf
+-// Returns: number of bytes in the packed form
+-// This callback may be NULL.
+-
+-  size_t (idaapi *write_cb)(const area_t *a,uchar *packbuf, uchar *packend);
+-
+-
+-// Destroy callback: remove an area from the internal cache.
+-// This function is called when an area is freed from the cache.
+-// This callback may be NULL.
+-
+-  void (idaapi *delcache_cb)(area_t *a);
+-
+-
+-// The following three callbacks are used in open_areas_window() function.
+-// When the user presses Ctrl-E key the following callback is called
+-// to edit the selected area.
+-// This callback may be NULL.
+-
+-  int (idaapi *edit_cb)(area_t *a);
+-
+-
+-// Callback to handle "Del" keystroke in open_areas_window() function
+-// This callback may be NULL.
+-
+-  int (idaapi *kill_cb)(area_t *a);
+-
+-
+-// Callback to handle "Ins" keystroke in open_areas_window() function
+-// This callback may be NULL.
+-
+-  int (idaapi *new_cb)(void);
+-
+ 
+ // Constructor. Initialized area control block. You need to link
+ // area control block to existing area information in Btree (link) or
+@@ -451,101 +398,6 @@
+         { return areacb_t_get_area_qty(this); }
+ 
+ 
+-// Let the user choose an area. (1-column chooser)
+-// This function displays a window with a list of areas
+-// and allows the user to choose an area from the list.
+-//      flags - see kernwin.hpp for choose() flags description and callbacks usage
+-//      width - width of the window
+-//      getl  - callback function to get text representation of an area
+-//                      obj - pointer to area control block
+-//                      n   - (number of area + 1). if n==0 then getl() should
+-//                            return text of a header line.
+-//                      buf - buffer for the text representation
+-//              getl() should return pointer to text representation string
+-//              (not nesessarily the same pointer as 'buf')
+-//      title - title of the window.
+-//      icon  - number of icon to display
+-//      defea - address which points to the default area. The cursor will be
+-//              position to this area.
+-//      (x0,y0,x1,y1) - window position on the screen
+-//                      -1 values specify default window position
+-//                      (txt:upper left corner of the screen)
+-//                      (gui:centered on the foreground window)
+-//      popup_menus - default is insert, delete, edit, refresh
+-// returns: NULL - the user pressed Esc.
+-//      otherwise - pointer to the selected area.
+-
+-  area_t *choose_area(int flags,
+-                      int width,
+-                      char *(idaapi*getl)(areacb_t *obj,ulong n,char *buf),
+-                      const char *title,
+-                      int icon,
+-                      int x0=-1,int y0=-1,int x1=-1,int y1=-1,
+-                      const char * const *popup_menus=NULL,
+-                      ea_t defea=BADADDR)
+-  {
+-    return areacb_t_choose_area(this, flags, width, getl, title, icon,
+-                        x0, y0, x1, y1, popup_menus, defea);
+-  }
+-
+-
+-// Let the user choose an area. (n-column chooser)
+-// This function displays a window with a list of areas
+-// and allows the user to choose an area from the list.
+-//      flags - see kernwin.hpp for choose() flags description and callbacks usage
+-//      ncol  - number of columns
+-//      widths- widths of each column in characters (may be NULL)
+-//      getl  - callback function to get text representation of an area
+-//                      obj - pointer to area control block
+-//                      n   - (number of area + 1). if n==0 then getl() should
+-//                            return text of a header line.
+-//                      arrptr - array of buffers for the text representation
+-//      title - title of the window.
+-//      icon  - number of icon to display
+-//      defea - address which points to the default area. The cursor will be
+-//              position to this area.
+-//      (x0,y0,x1,y1) - window position on the screen
+-//                      -1 values specify default window position
+-//                      (txt:upper left corner of the screen)
+-//                      (gui:centered on the foreground window)
+-//      popup_menus - default is insert, delete, edit, refresh
+-// returns: NULL - the user cancelled the selection
+-//     otherwise - pointer to the selected area.
+-
+-  area_t *choose_area2(int flags,
+-                      int ncol,
+-                      const int *widths,
+-                      void (idaapi*getl)(areacb_t *obj,ulong n,char * const *arrptr),
+-                      const char *title,
+-                      int icon,
+-                      int x0=-1,int y0=-1,int x1=-1,int y1=-1,
+-                      const char * const *popup_menus=NULL,
+-                      ea_t defea=BADADDR)
+-  {
+-    return areacb_t_choose_area2(this, flags, ncol, widths, getl, title, icon,
+-                        x0, y0, x1, y1, popup_menus, defea);
+-  }
+-
+-
+-// Find previous gap in areas.
+-// This function finds a gap between areas. Only enabled addresses
+-// (see bytes.hpp for explanations on addressing) are used in the search.
+-//      ea - any linear address
+-// returns: BADADDR - no previous gap is found
+-//      otherwise returns maximal address in the previous gap
+-
+-  ea_t find_prev_gap(ea_t ea);        // find prev/next gaps in the enabled addresses
+-
+-
+-// Find next gap in areas.
+-// This function finds a gap between areas. Only enabled addresses
+-// (see bytes.hpp for explanations on addressing) are used in the search.
+-//      ea - any linear address
+-// returns: BADADDR - no next gap is found
+-//      otherwise returns start address of the next gap
+-
+-  ea_t find_next_gap(ea_t ea);        // if not found, returns BADADDR
+-
+ 
+ // Set area comment.
+ // This function sets area comment.
+@@ -578,16 +430,6 @@
+   char *get_area_cmt(const area_t *a, bool repeatable)
+         { return areacb_t_get_area_cmt(this, a, repeatable); }
+ 
+-
+-// Move area information to the specified addresses
+-// Returns: 0 if ok, otherwise the code returned by area_mover
+-
+-  int move_areas(ea_t from,
+-                 ea_t to,
+-                 asize_t size,
+-                 int (idaapi *area_mover)(area_t *a, adiff_t delta, void *ud)=NULL,
+-                 void *ud=NULL)
+-        { return areacb_t_move_areas(this, from, to, size, area_mover, ud); }
+ };
+ 
+ #pragma pack(pop)
+diff -ur --strip-trailing-cr include-orig/auto.hpp include-swig/auto.hpp
+--- include-orig/auto.hpp	2006-07-31 18:49:14.042096000 -0700
++++ include-swig/auto.hpp	2006-07-31 18:49:13.681577600 -0700
+@@ -134,10 +134,6 @@
+ idaman void ida_export reanalyze_callers(ea_t ea, bool noret);
+ 
+ 
+-// process all autorequests with the given type
+-void auto_process_all(ea_t low, ea_t high, atype_t type);
+-
+-
+ // Plan to apply the callee's type to the calling point
+ 
+ idaman void ida_export auto_apply_type(ea_t caller, ea_t callee);
+@@ -152,26 +148,6 @@
+ idaman int ida_export analyze_area(ea_t sEA,ea_t eEA);
+ 
+ 
+-// Is 'ea' present in AU_CODE queue?
+-// (i.e. is it planned to be converted to an instruction?)
+-
+-int autoPlanned(ea_t ea);
+-
+-
+-// Get next address present in the AU_CODE queue.
+-// (i.e. the next address planned to be converted to an instruction)
+-// Returns BADADDR if no such address exist.
+-
+-ea_t nextPlanned(ea_t sEA);
+-
+-
+-// Remove address from AU_CODE queue.
+-// (i.e. cancel conversion to an instruction)
+-// You may specify any address as 'ea'.
+-
+-void autoDelCode(ea_t ea);
+-
+-
+ // Process enerything in the queues and return true.
+ // Return false if Ctrl-Break was pressed.
+ 
+@@ -198,13 +174,6 @@
+ idaman bool ida_export autoStep(void);
+ 
+ 
+-// Peek into a queue 'type' for an address not lower than 'lowEA'
+-// Do not remove address from the queue.
+-// Return the address or BADADDR.
+-
+-ea_t autoPeek(ea_t lowEA, atype_t type);
+-
+-
+ // Retrieve an address from queues regarding their priority.
+ // Returns BADADDR if no addresses not lower than 'lowEA' and less than
+ // 'highEA' are found in the queues.
+@@ -213,19 +182,6 @@
+ idaman ea_t ida_export auto_get(ea_t lowEA, ea_t highEA, atype_t *type);
+ 
+ 
+-// Appropriately process 'ea' as specified by 'type'
+-// for kernel only, no need to call this function from modules
+-
+-void autoProcess(ea_t ea,atype_t type);
+-
+-
+-// Initialize analyzer. The kernel initializes it at the start.
+-
+-void auto_init(void);
+-void auto_save(void);
+-void auto_term(void);
+-
+-
+ // Get two-character queue name to display on the indicator
+ 
+ idaman const char *ida_export autoGetName(atype_t type);
+diff -ur --strip-trailing-cr include-orig/bytes.hpp include-swig/bytes.hpp
+--- include-orig/bytes.hpp	2006-07-31 18:49:14.052110400 -0700
++++ include-swig/bytes.hpp	2006-07-31 18:49:13.681577600 -0700
+@@ -148,13 +148,6 @@
+ idaman ea_t ida_export next_not_tail(ea_t ea);
+ 
+ 
+-// Adjust the address and get the nearest visible address
+-// (i.e. an adress which will appear in the disassembly)
+-// This function returns BADADDR only if no addresses are valid
+-
+-ea_t adjust_visea(ea_t ea);
+-
+-
+ // Get previous visible address
+ // Returns BADADDR if none exists.
+ 
+@@ -166,22 +159,6 @@
+ 
+ idaman ea_t ida_export next_visea(ea_t ea);
+ 
+-
+-// Is an address the first visible address?
+-
+-bool is_first_visea(ea_t ea);
+-
+-
+-// Is an address the last visible address?
+-
+-bool is_last_visea(ea_t ea);
+-
+-
+-// Is the address visible on the screen (not hidden)?
+-
+-bool is_visible_finally(ea_t ea); // do we need to show anything
+-                                  // at this address?
+-
+ // this function is only for the kernel
+ idaman void ida_export invalidate_visea_cache(void);
+ 
+@@ -221,11 +198,6 @@
+ inline asize_t get_item_size(ea_t ea) { return get_item_end(ea) - ea; }
+ 
+ 
+-// Flush virtual array to disk
+-
+-void fluFlags(void);
+-
+-
+ // Is the specified address 'ea' present in the program?
+ 
+ idaman bool ida_export isEnabled(ea_t ea);
+@@ -377,7 +349,6 @@
+ // In the above example, it will be incremented in the first loop iteration.
+ 
+ idaman uchar ida_export get_8bit(ea_t &ea,ulong &v,int &nbit);
+-uchar get_ascii_char(ea_t &ea, ulong &v, int &nb); // takes into account AS2_BYTE1CHAR
+ 
+ 
+ // Get 16bits of the program at 'ea'
+@@ -1394,16 +1365,6 @@
+         const typeinfo_t *ti);
+ 
+ 
+-// Delete additional information about a data type
+-//      ea      - linear address of item
+-//      n       - number of operand, 0 or 1
+-//      flags   - flags of the item
+-// This function is a low level one. Only the kernel should use it.
+-
+-void del_typeinfo(ea_t ea, flags_t flag);
+-void del_operand_typeinfo(ea_t ea, int n, flags_t flag);
+-
+-
+ // get size of data type specified in flags 'F'.
+ //      F    - flags
+ //      ti   - additional information about the data type. For example,
+@@ -1456,15 +1417,6 @@
+ #define FF_IMMD 0x40000000L             // Has Immediate value ?
+ #define FF_JUMP 0x80000000L             // Has jump table or switch_info?
+ 
+-// Convert to an instruction
+-// (internal function, should not be used in modules, never)
+-// use ua_code() instead.
+-//      ea     - linear address
+-//      length - length of instruction
+-// Returns: 1-ok, 0-failure
+-
+-bool doCode(ea_t ea,int length);
+-
+ 
+ // Has immediate value?
+ 
+@@ -1525,27 +1477,6 @@
+ idaman ssize_t ida_export get_cmt(ea_t ea, bool rptble, char *buf, size_t bufsize);
+ 
+ 
+-// Get a repeatable comment of any type (indented or function comment)
+-// This function is used to display an indented comment if no regular
+-// (non-repeatable) comment is present.
+-//      ea     - linear address. may point to tail byte, the function
+-//               will find start of the item
+-// returns: comment or NULL. The caller must qfree() the result.
+-
+-char *get_repeatable_cmt(ea_t ea);
+-
+-
+-// Get any indented comment (regular or repeatable indented or function)
+-// This function is used to display an indented comment for an item.
+-// It looks for a regular comment and calls get_rpt_cmt() if it is not found.
+-//      ea      - linear address
+-//      cmttype - will contain color of the comment. The color depends on
+-//                the type of the comment.
+-// returns: comment or NULL. The caller must qfree() the result.
+-
+-char *get_any_indented_cmt(ea_t ea, color_t *cmttype);
+-
+-
+ // Append to an indented comment
+ // Creates a new comment if none exists.
+ // Appends a newline character and the specified string otherwise.
+@@ -1557,12 +1488,6 @@
+ idaman bool ida_export append_cmt(ea_t ea, const char *str, bool rptble);
+ 
+ 
+-// Delete an indented comment attached to an instruction
+-// when the instruction is deleted
+-
+-extern bool del_code_comments;
+-
+-
+ //--------------------------------------------------------------------------
+ //      S E A R C H  F U N C T I O N S
+ //--------------------------------------------------------------------------
+@@ -1647,24 +1572,6 @@
+ //      D E B U G G E R  M E M O R Y  F U N C T I O N S  F O R  U I
+ //--------------------------------------------------------------------------
+ 
+-// Set the memory information source for IDA kernel
+-// This function allows the kernel to use information coming from somewhere
+-// else than the database (from the debugger, for example)
+-//   dbg_get_memory_config - returns current memory configuration
+-//                           in the dynamic memory allocated by qalloc()
+-//                           The kernel will qfree() is automatically
+-//                           n - number of area_t elements in the answer
+-//                           If dbg_get_memory_config == NULL, then the debugged
+-//                           process memory is not used
+-//   memory_read           - read bytes from the debugged process memory
+-//   memory_write          - write bytes to the debugged process memory
+-//                           (don't forget to call invalidate_dbgmem_contents() from it)
+-
+-idaman void ida_export set_dbgmem_source(
+-        area_t *(idaapi*dbg_get_memory_config)(int *n),
+-        int (idaapi*memory_read) (ea_t ea, void *buffer, int size),
+-        int (idaapi*memory_write)(ea_t ea, const void *buffer, int size));
+-
+ // Invalidate the debugged process memory configuration
+ // Call this function if the debugged process might have changed its memory
+ // layout (allocated more memory, for example)
+@@ -1786,15 +1693,9 @@
+ inline void idaapi doFlow(ea_t ea)      { setFlbits(ea, FF_FLOW);  }
+ inline void idaapi noFlow(ea_t ea)      { clrFlbits(ea, FF_FLOW);  }
+ 
+-void doRef(ea_t ea);
+-void noRef(ea_t ea);
+-
+ inline void idaapi doExtra(ea_t ea) { setFlbits(ea, FF_LINE); }
+ inline void idaapi noExtra(ea_t ea) { clrFlbits(ea, FF_LINE); }
+ 
+-//--------------------------------------------------------------------------
+-asize_t coagulate(ea_t ea);
+-bool coagulate_dref(ea_t From, ea_t To, flags_t F, bool may_define);
+ 
+ //--------------------------------------------------------------------------
+ inline ea_t idaapi get_item_head(ea_t ea)
+@@ -1804,49 +1705,6 @@
+   return ea;
+ }
+ 
+-// init/save/term work with hidden areas
+-// These functions are called from the kernel at the start.
+-
+-void init_hidden_areas(void);
+-void save_hidden_areas(void);
+-void term_hidden_areas(void);
+-
+-
+-// Move chunk of flags information to the new address (kernel only)
+-int check_move_args(ea_t from, ea_t to, asize_t size); // returns VAMOVE_...
+-int movechunk(ea_t from, ea_t to, asize_t size);
+-
+-// internal kernel functions to lock the debugger memory configuration updates
+-void lock_dbgmem_config(void);
+-void unlock_dbgmem_config(void);
+-
+-
+-//--------------------------------------------------------------------------
+-// ida virtual memory configuration:
+-// (not reachable from modules)
+-extern ushort ida_vpagesize;    // Virtual memory page size       (*.id1)
+-extern ushort ida_vpages;       // Size of virtual memory window  (*.id1)
+-extern ushort ida_npagesize;    // Name pointers page size        (*.nam)
+-extern ushort ida_npages;       // Number of name pointer pages   (*.nam)
+-
+-
+-// initialize virtual array (*.id1)
+-//     input_size - input file size (used only if database didn't exist before)
+-
+-void FlagsInit(ulong input_size);
+-
+-
+-// terminate virtual array
+-
+-void FlagsTerm(void);
+-
+-
+-// make virtual array empty.
+-// returns: 1-ok, 0-failure(never should occur)
+-
+-bool FlagsReset(void);
+-
+-
+ #ifndef BYTES_SOURCE    // undefined bit masks so no one can use them directly
+ #undef MS_VAL
+ #undef FF_IVL
+diff -ur --strip-trailing-cr include-orig/entry.hpp include-swig/entry.hpp
+--- include-orig/entry.hpp	2006-07-31 18:49:14.062124800 -0700
++++ include-swig/entry.hpp	2006-07-31 18:49:13.681577600 -0700
+@@ -74,12 +74,5 @@
+ idaman bool ida_export rename_entry(uval_t ord, const char *name);
+ 
+ 
+-
+-// init/term (for the kernel)
+-
+-void init_entries(void);
+-void term_entries(void);
+-void move_entries(ea_t from, ea_t to, asize_t size);
+-
+ #pragma pack(pop)
+ #endif // _ENTRY_HPP
+diff -ur --strip-trailing-cr include-orig/frame.hpp include-swig/frame.hpp
+--- include-orig/frame.hpp	2006-07-31 18:49:14.072139200 -0700
++++ include-swig/frame.hpp	2006-07-31 18:49:13.681577600 -0700
+@@ -172,30 +172,6 @@
+ idaman char *ida_export build_stkvar_name(char *buf, size_t bufsize, func_t *pfn, sval_t v);
+ 
+ 
+-// internal function: create special part of function frame
+-// this function won't create zero size members
+-// also it doesn't check the validity of the "name"
+-// returns: STRUC_ERROR.. codes (see struct.hpp)
+-
+-int add_frame_spec_member(struc_t *sptr, const char *name, ea_t offset, asize_t nbytes);
+-
+-
+-// Delete all stack variables in the specified range
+-//      ea1 - starting linear address
+-//      ea2 - ending   linear address
+-
+-void del_stkvars(ea_t ea1, ea_t ea2);
+-
+-
+-// Calculate offset of stack variable in the frame structure
+-//      pfn - pointer to function (can't be NULL!)
+-//      x   - reference to instruction operand
+-//      v   - value of variable offset in the instruction
+-// returns: offset of stack variable in the frame structure (0..n)
+-
+-ea_t calc_frame_offset(func_t *pfn, const op_t *x, sval_t v);
+-
+-
+ // Calculate offset of stack variable in the frame structure
+ //      pfn - pointer to function (can't be NULL!)
+ //      ea  - linear address of the instruction
+@@ -308,13 +284,6 @@
+ idaman int ida_export del_regvar(func_t *pfn, ea_t ea1, ea_t ea2, const char *canon);
+ 
+ 
+-// These functions are for internal use by the kernel
+-void read_regvars(func_t *pfn);
+-bool write_regvars(func_t *pfn);
+-void del_regvars(ea_t ea);
+-void free_regvar(regvar_t *v);
+-bool gen_regvar_defs(func_t *pfn, ea_t ea);
+-
+ //--------------------------------------------------------------------------
+ //      L O C A L   L A B E L S
+ //--------------------------------------------------------------------------
+@@ -327,40 +296,6 @@
+   char *name;
+ };
+ 
+-// Define/rename/delete a local label
+-//      pfn     - function in which the definition will be created
+-//      ea      - linear address of the label
+-//      name    - name of the label. If NULL or empty string, name will be removed
+-// returns: success
+-// THIS IS A LOW LEVEL FUNCTION - use set_name() instead of it!
+-
+-bool set_llabel(func_t *pfn, ea_t ea, const char *name);
+-
+-
+-// Get address of a local label
+-//      pfn     - function in question
+-//      name    - name of the label
+-// Returns: BADADDR-not found
+-// THIS IS A LOW LEVEL FUNCTION - use get_name_ea() instead of it!
+-
+-ea_t get_llabel_ea(func_t *pfn, const char *name);
+-
+-
+-// Get local label at the specified address
+-//      pfn     - function in question
+-//      ea      - linear address of the label
+-// Returns: NULL or ptr to the name
+-// THIS IS A LOW LEVEL FUNCTION - use get_name() instead of it!
+-
+-const char *get_llabel(func_t *pfn, ea_t ea);
+-
+-
+-// These functions are for internal use by the kernel
+-void read_llabels(func_t *pfn);
+-bool write_llabels(func_t *pfn);
+-void del_llabels(ea_t ea);
+-void free_llabel(llabel_t *l);
+-
+ //--------------------------------------------------------------------------
+ //      S P   R E G I S T E R   C H A N G E   P O I N T S
+ //--------------------------------------------------------------------------
+@@ -424,13 +359,5 @@
+ 
+ idaman bool ida_export recalc_spd(ea_t cur_ea);
+ 
+-
+-// Low level functions to work with sp change points. Should not be used
+-// directly!
+-
+-stkpnt_t * read_stkpnts(func_t *pfn);
+-bool write_stkpnts(func_t *pfn);
+-int del_stkpnts(func_t *pfn, ea_t ea1, ea_t ea2);
+-
+ #pragma pack(pop)
+ #endif // _FRAME_HPP
+diff -ur --strip-trailing-cr include-orig/funcs.hpp include-swig/funcs.hpp
+--- include-orig/funcs.hpp	2006-07-31 18:49:14.082153600 -0700
++++ include-swig/funcs.hpp	2006-07-31 18:49:13.681577600 -0700
+@@ -9,8 +9,6 @@
+ 
+ #ifndef FUNCS_HPP
+ #define FUNCS_HPP
+-#include <area.hpp>
+-#include <bytes.hpp>
+ #pragma pack(push, 1)           // IDA uses 1 byte alignments!
+ 
+ //
+@@ -560,21 +558,6 @@
+ };
+ 
+ 
+-// Function to iterate function chunks (all of them including the entry chunk)
+-//      pfn - pointer to the function
+-//      func - function to call for each chunk
+-//      ud - user data for 'func'
+-//      include_parents - meaningful only if pfn points to a function tail
+-//              if true, all tail parents will be iterated
+-//              if false, only the given tail will be iterated
+-
+-idaman void ida_export iterate_func_chunks(
+-                          func_t *pfn,
+-                          void (idaapi *func)(ea_t ea1, ea_t ea2, void *ud),
+-                          void *ud=NULL,
+-                          bool include_parents=false);
+-
+-
+ // Class to enumerate all function instructions and data sorted by addresses.
+ // The function entry chunk items are enumerated first regardless of their addresses
+ // Sample code:
+@@ -655,10 +638,6 @@
+ 
+ idaman void ida_export read_regargs(func_t *pfn);
+ idaman void ida_export add_regarg(func_t *pfn, int reg, const type_t *type, const char *name);
+-void del_regargs(ea_t ea);      // low level
+-int write_regargs(func_t *pfn);
+-regarg_t *find_regarg(func_t *pfn, int reg);
+-void free_regarg(regarg_t *v);
+ 
+ //--------------------------------------------------------------------
+ //      L I B R A R Y   M O D U L E   S I G N A T U R E S
+@@ -780,13 +759,6 @@
+                                          char *buf,
+                                          size_t bufsize);
+ 
+-// Determine compiler/vendor based on startup signatures.
+-// If determined, then appropriate signature files are included into
+-// the list of planned signature files.
+-
+-void determine_rtl(void);               // find runtime library
+-
+-
+ // Apply the currently loaded signature file to the specified address.
+ // If a library function is found, then create a function and name
+ // it accordingly.
+@@ -799,27 +771,6 @@
+ #define LIBFUNC_NONE    1               // no, this is not a library function
+ #define LIBFUNC_DELAY   2               // no decision because of lack of information
+ 
+-// KERNEL mode functions
+-
+-// init/save/term signatures. only the kernel calls these functions
+-
+-       void init_signatures(void);
+-inline void save_signatures(void) {}
+-       void term_signatures(void);
+-
+-
+-void init_funcs(void);  // Initialize work with functions
+-void save_funcs(void);  // Flush information about function to the disk
+-void term_funcs(void);  // Terminate work with functions
+-
+-void move_funcs(ea_t from, ea_t to, asize_t size);
+-
+-// set noret flag for "exit" functions
+-bool copy_noret_info(func_t *fn, ea_t to, const char *name=NULL);
+-
+-void create_func_eas_array(void);       // for old databases
+-
+-ea_t auto_add_func_tails(ea_t ea);      // auto: append function tail
+ 
+ #pragma pack(pop)
+ #endif
+diff -ur --strip-trailing-cr include-orig/gdl.hpp include-swig/gdl.hpp
+--- include-orig/gdl.hpp	2006-07-31 18:49:14.092168000 -0700
++++ include-swig/gdl.hpp	2006-07-31 18:49:13.681577600 -0700
+@@ -62,8 +62,6 @@
+   node_iterator begin(void) const { return node_iterator(this, 0).goup(); }
+   node_iterator end(void)   const { return node_iterator(this, size()); }
+   int front(void) { return *begin(); }
+-  void gen_gdl(FILE *fp) const;
+-  void gen_gdl(const char *file) const;
+   virtual bool empty(void) const { return node_qty() == 0; }
+   int nedge(int node, bool ispred) const { return ispred ? npred(node) : nsucc(node); }
+   int edge(int node, int i, bool ispred) const { return ispred ? pred(node, i) : succ(node, i); }
+@@ -137,12 +135,6 @@
+ #define CHART_PRINT_DOTS       0x200 // print dots if xrefs exist outside of the range recursion depth
+ 
+ 
+-// Setup the user-defined graph colors and graph viewer program.
+-// This function is called by the GUI at the beginning, so no need to call
+-// it again.
+-
+-idaman void ida_export setup_graph_subsystem(const char *grapher, bgcolor_t (idaapi *get_graph_color)(int color));
+-
+ #pragma pack(pop)
+ #endif
+ 
+diff -ur --strip-trailing-cr include-orig/ida.hpp include-swig/ida.hpp
+--- include-orig/ida.hpp	2006-07-31 18:49:14.102182400 -0700
++++ include-swig/ida.hpp	2006-07-31 18:49:13.681577600 -0700
+@@ -298,16 +298,6 @@
+   uchar         lprefixlen;             // length of the lprefix
+   compiler_info_t cc;                   // Target compiler
+ 
+-
+-  void init(void);
+-
+-  static bool   retrieve(void);         // low level function to get this
+-                                        // structure from the database
+-  static bool   read(const char *basename); // high level function to get
+-                                        // this structure from the database
+-                                        // and convert to the current format
+-  static void   write(void);            // write back to the database
+-
+ };
+ 
+ idaman idainfo ida_export_data inf;     // program specific information
+diff -ur --strip-trailing-cr include-orig/kernwin.hpp include-swig/kernwin.hpp
+--- include-orig/kernwin.hpp	2006-07-31 18:49:14.112196800 -0700
++++ include-swig/kernwin.hpp	2006-07-31 18:49:13.681577600 -0700
+@@ -644,9 +644,6 @@
+                   int argc,
+                   char *argv[]);
+ 
+-// The user interface dispatcher - it is in the user-interface
+-callui_t idaapi CALLUI(ui_notification_t what,...);
+-
+ // Pointer to the user-interface dispatcher function
+ // This pointer is in the kernel
+ idaman callui_t ida_export_data (idaapi*callui)(ui_notification_t what,...);
+@@ -718,7 +715,6 @@
+   short lnnum;
+   place_t(void) {}
+   place_t(short ln) : lnnum(ln) {}
+-  virtual void idaapi print(void *ud,char *buf, size_t bufsize) const  = 0;
+   virtual uval_t idaapi touval(void *ud) const                         = 0;
+   virtual place_t *idaapi clone(void) const                            = 0;
+   virtual void idaapi copyfrom(const place_t *from)                    = 0; // copy everything
+@@ -744,7 +740,6 @@
+ //--------------------------------------------------------------------------
+ #define define_place_exported_functions(classname)                                  \
+ class classname;                                                                    \
+-idaman void     ida_export classname ## __print(const classname *,void*,char*, size_t);    \
+ idaman uval_t   ida_export classname ## __touval(const classname *,void*);                 \
+ idaman place_t *ida_export classname ## __clone(const classname *);                        \
+ idaman void     ida_export classname ## __copyfrom(classname *,const place_t*);            \
+@@ -758,8 +753,6 @@
+ idaman int      ida_export classname ## __generate(const classname *,void*,char**,int,int*,color_t*,bgcolor_t*);
+ 
+ #define define_place_virtual_functions(class)                           \
+-  void idaapi print(void *ud,char *buf, size_t bufsize) const           \
+-        {        class ## __print(this,ud,buf,bufsize); }               \
+   uval_t idaapi touval(void *ud) const                                  \
+         { return class ## __touval(this,ud); }                          \
+   place_t *idaapi clone(void) const                                     \
+@@ -786,15 +779,6 @@
+                                                 pfx_color, bg_color); }
+ 
+ //--------------------------------------------------------------------------
+-define_place_exported_functions(microplace_t)
+-class microplace_t : public place_t {             // a place pointer
+-public:
+-  int block;    // basic block number
+-  int n;        // microinstruction number
+-  microplace_t(void) {}
+-  microplace_t(int b, int _n) : block(b), n(_n), place_t(0) {}
+-  define_place_virtual_functions(microplace_t);
+-};
+ 
+ //--------------------------------------------------------------------------
+ // user defined data for linearray_t: int *flag
+@@ -1120,104 +1104,6 @@
+ // Generic list choosers. These functions display a window with a list and allow
+ // the user to select an item from the list.
+ 
+-// Generic list chooser (1-column)
+-//      Returns: -1   - the chooser was already open and is now active (only for non-modal choosers)
+-//               0    - the chooser was created but the user refused to choose anything
+-//               else - number of them selected item
+-ulong choose(
+-        int flags,                      // various flags: see above for description
+-        int x0,int y0,                  // x0=-1 for autoposition
+-        int x1,int y1,
+-        void *obj,                      // object to show
+-        int width,                      // Max width of lines
+-        ulong (idaapi*sizer)(void *obj),      // Number of items
+-        char *(idaapi*getl)(void *obj,ulong n,char *buf),// Description of n-th item (1..n)
+-                                        // 0-th item if header line
+-        const char *title,              // menu title (includes ptr to help)
+-        int icon,                       // number of the default icon to display
+-        ulong deflt=1,                  // starting item
+-        ulong (idaapi*del)(void *obj,ulong n)=NULL,   // callback for "Delete" (may be NULL)
+-                                                      // supports multi-selection scenario too
+-                                                      // returns: 1-ok, 0-failed
+-        void (idaapi*ins)(void *obj)=NULL,            // callback for "New" (may be NULL)
+-        ulong (idaapi*update)(void *obj,ulong n)=NULL,// callback for "Update"(may be NULL)
+-                                                      // update the whole list
+-                                                      // returns the new location of item 'n'
+-        void (idaapi*edit)(void *obj,ulong n)=NULL,   // callback for "Edit" (may be NULL)
+-        void (idaapi*enter)(void * obj,ulong n)=NULL, // callback for non-modal "Enter" (may be NULL)
+-        void (idaapi*destroy)(void *obj)=NULL,        // callback to call when the window is closed (may be NULL)
+-        const char * const *popup_names=NULL,         // Default: insert, delete, edit, refresh
+-        int (idaapi*get_icon)(void *obj,ulong n)=NULL); // callback for get_icon (may be NULL)
+-
+-
+-// convenience function: modal chooser
+-inline ulong choose(void *obj,
+-                    int width,
+-                    ulong (idaapi*sizer)(void *obj),
+-                    char *(idaapi*getl)(void *obj,ulong n,char *buf),
+-                    const char *title,
+-                    int icon=-1,
+-                    ulong deflt=1,
+-                    ulong (idaapi*del)(void *obj,ulong n)=NULL,
+-                    void (idaapi*ins)(void *obj)=NULL,
+-                    ulong (idaapi*update)(void *obj,ulong n)=NULL,
+-                    void (idaapi*edit)(void *obj,ulong n)=NULL,
+-                    void (idaapi*enter)(void * obj,ulong n)=NULL,
+-                    void (idaapi*destroy)(void *obj)=NULL,
+-                    const char * const *popup_names=NULL,
+-                    int (idaapi*get_icon)(void *obj,ulong n)=NULL)
+-{
+-  return choose(CH_MODAL,-1,-1,-1,-1, obj, width, sizer,
+-                getl, title, icon, deflt, del, ins,
+-                update, edit, enter, destroy, popup_names, get_icon);
+-}
+-
+-// Generic list chooser (n-column)
+-// See choose() above for the description of the undescribed parameters
+-ulong choose2(
+-        int flags,
+-        int x0,int y0,                  // x0=-1 for autoposition
+-        int x1,int y1,
+-        void *obj,                      // object to show
+-        int ncol,                       // Number of columns
+-        const int *widths,              // Widths of columns (may be NULL)
+-        ulong (idaapi*sizer)(void *obj),
+-        void (idaapi*getl)(void *obj,ulong n,char * const *arrptr),
+-        const char *title,
+-        int icon,
+-        ulong deflt=1,
+-        ulong (idaapi*del)(void *obj,ulong n)=NULL,
+-        void (idaapi*ins)(void *obj)=NULL,
+-        ulong (idaapi*update)(void *obj,ulong n)=NULL,
+-        void (idaapi*edit)(void *obj,ulong n)=NULL,
+-        void (idaapi*enter)(void * obj,ulong n)=NULL,
+-        void (idaapi*destroy)(void *obj)=NULL,
+-        const char * const *popup_names=NULL,
+-        int (idaapi*get_icon)(void *obj,ulong n)=NULL);
+-
+-
+-// convenience function: modal chooser2
+-inline ulong choose2(void *obj,
+-                     int ncol,
+-                     const int *widths,
+-                     ulong (idaapi*sizer)(void *),
+-                     void (idaapi*getl)(void *,ulong,char*const*),
+-                     const char *title,
+-                     int icon=-1,
+-                     ulong deflt=1,
+-                     ulong (idaapi*del)(void *,ulong)=NULL,
+-                     void (idaapi*ins)(void *)=NULL,
+-                     ulong (idaapi*update)(void *,ulong)=NULL,
+-                     void (idaapi*edit)(void *,ulong)=NULL,
+-                     void (idaapi*enter)(void *,ulong)=NULL,
+-                     void (idaapi*destroy)(void *)=NULL,
+-                     const char * const *popup_names=NULL,
+-                     int (idaapi*get_icon)(void *obj,ulong n)=NULL)
+-{
+-  return choose2(CH_MODAL,-1,-1,-1,-1, obj, ncol, widths,
+-                 sizer, getl, title, icon, deflt, del,
+-                 ins, update, edit, enter, destroy, popup_names, get_icon);
+-}
+ 
+ // Callback function for menu commands
+ // If returns true, IDA will refresh the disassembly view and the list contents
+@@ -1235,7 +1121,9 @@
+ inline void refresh_idaview(void)          { callui(ui_refreshmarked);}
+ inline void refresh_idaview_anyway(void)   { callui(ui_refresh);      }
+ inline void analyzer_options(void)         { callui(ui_analyzer_options); }
++
+ inline ea_t get_screen_ea(void)            { ea_t ea; callui(ui_screenea, &ea); return ea; }
++
+ inline bool get_cursor(int *x, int *y)     { return callui(ui_get_cursor, x, y).cnd; }
+ inline char *get_curline(void)             { return callui(ui_get_curline).cptr; }
+ inline bool read_selection(ea_t *ea1, ea_t *ea2) { return callui(ui_readsel, ea1, ea2).cnd; }
+@@ -1392,40 +1280,6 @@
+ }
+ 
+ 
+-// Pointer to idaview marker function.
+-// This pointer is initialized by callui(ui_get_marker)
+-
+-extern void (idaapi*idaview_marker)(ea_t ea);
+-
+-
+-// Initialize pointer to idaview marker
+-
+-inline void setup_idaview_marker(void)
+-{
+-  void *ptr = callui(ui_get_marker).vptr;
+-  if ( ptr != NULL )
+-    idaview_marker = (void (idaapi*)(ea_t))ptr;
+-}
+-
+-
+-// Mark the view to refresh - disassembly
+-// at 'ea' is changed.
+-
+-inline void mark_idaview_for_refresh(ea_t ea)
+-{
+-  if ( idaview_marker != NULL )
+-    idaview_marker(ea);
+-}
+-
+-// Mark the view to refresh unconditionally
+-
+-inline void mark_idaview_for_refresh_anyway(void)
+-{
+-  if ( idaview_marker != NULL )
+-    idaview_marker(get_screen_ea());
+-}
+-
+-
+ inline char *choose_idasgn(void)
+ {
+   return callui(ui_choose, chtype_idasgn).cptr;
+@@ -1506,64 +1360,6 @@
+                                             offset, delta, appzero, path).i;
+ }
+ 
+-// Generic list chooser (1-column)
+-// See the description of this function above in this file
+-// (to find it, search for "list choosers")
+-inline ulong choose(
+-        int flags,
+-        int x0,int y0,
+-        int x1,int y1,
+-        void *obj,
+-        int width,
+-        ulong (idaapi*sizer)(void *obj),
+-        char *(idaapi*getl)(void *obj,ulong n,char *buf),
+-        const char *title,
+-        int icon,
+-        ulong deflt,
+-        ulong (idaapi*del)(void *obj,ulong n),
+-        void (idaapi*ins)(void *obj),
+-        ulong (idaapi*update)(void *obj,ulong n),
+-        void (idaapi*edit)(void *obj,ulong n),
+-        void (idaapi*enter)(void * obj,ulong n),
+-        void (idaapi*destroy)(void *obj),
+-        const char * const *popup_names,
+-        int (idaapi*get_icon)(void *obj,ulong n))
+-{
+-  return callui(ui_choose, chtype_generic, flags, x0, y0, x1, y1, obj, width,
+-                sizer, getl, title, icon, deflt, del, ins, update,
+-                edit, enter, destroy, popup_names, get_icon).i32;
+-}
+-
+-
+-// Generic list chooser (n-column)
+-// See the description of this function above in this file
+-// (to find it, search for "list choosers")
+-inline ulong choose2(
+-        int flags,
+-        int x0,int y0,
+-        int x1,int y1,
+-        void *obj,
+-        int ncol,
+-        const int *widths,
+-        ulong (idaapi*sizer)(void *obj),
+-        void (idaapi*getl)(void *obj,ulong n,char * const *arrptr),
+-        const char *title,
+-        int icon,
+-        ulong deflt,
+-        ulong (idaapi*del)(void *obj,ulong n),
+-        void (idaapi*ins)(void *obj),
+-        ulong (idaapi*update)(void *obj,ulong n),
+-        void (idaapi*edit)(void *obj,ulong n),
+-        void (idaapi*enter)(void * obj,ulong n),
+-        void (idaapi*destroy)(void *obj),
+-        const char * const *popup_names,
+-        int (idaapi*get_icon)(void *obj,ulong n))
+-{
+-  return callui(ui_choose, chtype_generic2, flags, x0, y0, x1, y1, obj, ncol,
+-                widths, sizer, getl, title, icon, deflt, del, ins,
+-                update, edit, enter, destroy, popup_names, get_icon).i32;
+-}
+-
+ 
+ // Display a dialog box with "Please wait..."
+ 
+@@ -2466,13 +2262,6 @@
+ idaman size_t ida_export print_disp(char *buf, char *end, adiff_t disp);
+ 
+ 
+-// String C-style conversions (convert \n to a newline and vice versa)
+-
+-idaman char *ida_export str2user(char *dst,const char *src, size_t dstsize); // make a user representation
+-idaman char *ida_export user2str(char *dst,const char *src, size_t dstsize); // make an internal representation
+-idaman char ida_export back_char(const char *&p);            // Translate char after '\\'
+-
+-
+ // ASCII <-> RADIX50 conversions
+ //      r - pointer to radix50 string
+ //      p - pointer to ascii string
+@@ -2484,7 +2273,6 @@
+ //         0-ok, all elements are converted
+ 
+ idaman int ida_export r50_to_asc(ushort *r, char *p, int k);
+-int                   asc_to_r50(char *p, ushort *r, int k);
+ 
+ 
+ // the following characters are allowed in ASCII strings, i.e.
+diff -ur --strip-trailing-cr include-orig/lines.hpp include-swig/lines.hpp
+--- include-orig/lines.hpp	2006-07-31 18:49:14.122211200 -0700
++++ include-swig/lines.hpp	2006-07-31 18:49:13.691592000 -0700
+@@ -301,23 +301,6 @@
+ idaman color_t   ida_export calc_prefix_color(ea_t ea);  // COLOR... constants
+ idaman bgcolor_t ida_export calc_bg_color(ea_t ea);      // RGB color
+ 
+-//------------------------------------------------------------------------
+-//      S O U R C E   F I L E S
+-//------------------------------------------------------------------------
+-
+-// IDA can keep information about source files used to create the program.
+-// Each source file is represented by a range of addresses.
+-// A source file may contains several address ranges.
+-
+-// init/save/term work with source files.
+-// These functions are called from the kernel at the start.
+-
+-       void init_sourcefiles(void);
+-inline void save_sourcefiles(void) {}
+-       void term_sourcefiles(void);
+-       void move_sourcefiles(ea_t from, ea_t to, asize_t size);
+-
+-
+ // Mark a range of address as belonging to a source file
+ // An address range may belong only to one source file.
+ // A source file may be represented by several address ranges.
+@@ -367,35 +350,6 @@
+ idaman int ida_export_data gl_bpsize; // Binary line prefix width (set by setup_makeline)
+ 
+ 
+-// User-defined line-prefixes are displayed just after the autogenerated
+-// line prefixes. In order to use them, the plugin should call the
+-// following function to specify its width and contents.
+-//      width - the width of the user-defined prefix
+-//      get_user_defined_prefix - a callback to get the contents of the
+-//                                prefix. Its arguments:
+-//                      ea     - linear address
+-//                      indent - indent of the line contents
+-//                               -1 means the default instruction
+-//                               indent and is used for instruction
+-//                               itself. see explanations for printf_line()
+-//                      line   - the line to be generated.
+-//                               the line usually contains color tags
+-//                               this argument can be examined to decide
+-//                               whether to generated the prefix
+-//                      buf    - the output buffer
+-//                      bufsize- the size of the output buffer
+-// In order to remove the callback before unloading the plugin,
+-// specify the width or the callback == NULL.
+-
+-idaman void ida_export set_user_defined_prefix(size_t width,
+-                        void (idaapi*get_user_defined_prefix)(ea_t ea,
+-                                                        int lnnum,
+-                                                        int indent,
+-                                                        const char *line,
+-                                                        char *buf,
+-                                                        size_t bufsize));
+-
+-
+ // Generate ONE line of disassembled text. You may call this function from
+ // out.cpp as many times as you need to generate all lines for an item
+ // (instruction or data).
+@@ -588,20 +542,6 @@
+   va_end(va);
+ }
+ 
+-
+-//------------------------------------------------------------------------
+-//      The following functions are used in kernel only:
+-
+-int gen_xref_lines(             // returns < 0 - overflow
+-        ea_t genEA,            // otherwise number of xrefs displayed
+-        ea_t (idaapi*first)(ea_t),
+-        ea_t (idaapi*next) (ea_t,ea_t),
+-        const char *tag,
+-        color_t color,
+-        int maxrefnum,
+-        size_t tail_depth,
+-        int checkflags);
+-
+ typedef ssize_t idaapi ml_getcmt_t(color_t *cmttype, char *buf, size_t bufsize);
+ typedef ssize_t idaapi ml_getnam_t(color_t *namtype, char *buf, size_t bufsize);
+ typedef bool    idaapi ml_genxrf_t(void); // returns: overflow
+@@ -652,18 +592,6 @@
+                                 // produce all of them (useful for parallel instructions)
+ 
+ 
+-// Generate label, function header, stack variable definitions, etc.
+-// returns: overflow
+-
+-int gen_labeled_line(ea_t ea);
+-
+-
+-// Generate local label if it exists
+-//      make_null - generate an empty line before generating a local label
+-// returns: overflow
+-
+-int gen_lname_line(ea_t ea, bool make_null);
+-
+ 
+ // A makeline producer is a function which completes the generation
+ // of a line. Its usual duties are to attach indented comments, xrefs,
+@@ -674,12 +602,6 @@
+ typedef bool idaapi makeline_producer_t(const char *line, int indent);
+ 
+ 
+-// set a new producer and get the old one
+-// if a producer is set to NULL, then the output lines won't be generated
+-
+-makeline_producer_t *set_makeline_producer(makeline_producer_t *mp);
+-
+-
+ // Get pointer to the sequence of characters denoting 'close comment'
+ // empty string means no comment (the current assembler has no open-comment close-comment pairs)
+ // This function uses ash.cmnt2
+@@ -711,36 +633,10 @@
+ const int E_PREV = 1000;
+ const int E_NEXT = 2000;
+ 
+-void    copy_extra_lines(ea_t from,ea_t to,int what);
+-
+-bool                  ExtraLines (ea_t ea,int start);   // 1-overflow
+-void                  ExtraKill  (ea_t ea);             // kill all extra lines
+ idaman int ida_export ExtraFree  (ea_t ea,int start);
+ 
+-void    entab(char *string);    // Convert spaces to tabulations
+-                                // if the string doesn't contain
+-                                // the ascii constants
+-
+-int Dumper(ea_t EA, char* Answer[],int maxsize, void *ud);
+-
+-// these functions are for the kernel only:
+-
+-inline void init_lines(void) {}
+-inline void save_lines(void) {}
+-       void term_lines(void);
+-
+-extern char gl_namedone; // name has been generated for the current item
+-
+-extern bool data_as_stack;      // display undefined data as 2/4/8 bytes
+-                                // depends on IDAPLACE_STACK
+-                                // used by intel_data()
+-
+-int calc_stack_alignment(ea_t ea); // calculate stack alignment, returns 2, 4, or 8
+ idaman ea_t ida_export align_down_to_stack(ea_t newea);
+ idaman ea_t ida_export align_up_to_stack(ea_t ea1, ea_t ea2=BADADDR);
+ 
+-// remove all spaces at the end of a colored string if any
+-char *remove_spaces(char *buf, char *end, char *ptr);
+-
+ #pragma pack(pop)
+ #endif
+diff -ur --strip-trailing-cr include-orig/moves.hpp include-swig/moves.hpp
+--- include-orig/moves.hpp	2006-07-31 18:49:14.132225600 -0700
++++ include-swig/moves.hpp	2006-07-31 18:49:13.691592000 -0700
+@@ -14,26 +14,11 @@
+ 
+ #include <sistack.hpp>
+ 
+-// Helper functions. Should not be called directly!
+-class curloc;
+-#define DEFINE_CURLOC_HELPERS(decl) \
+-decl void  ida_export curloc_linkTo   (curloc *, const char *stackName);\
+-decl void  ida_export curloc_jump_push(curloc *, bool try_to_unhide, ea_t ea, int lnnum, int x, int y);\
+-decl bool  ida_export curloc_pop      (curloc *, bool try_tohide);\
+-decl bool  ida_export curloc_get      (curloc *, size_t depth);\
+-decl void  ida_export curloc_mark     (curloc *, int marker,const char *title, const char *desc);\
+-decl ea_t  ida_export curloc_markedpos(curloc *, int *marker);\
+-decl bool  ida_export curloc_jump     (curloc *, int marker);\
+-decl ssize_t ida_export curloc_markdesc (curloc *, int marker, char *buf, size_t bufsize);
+-
+-DEFINE_CURLOC_HELPERS(idaman)
+-
+ #define CURLOC_SISTACK_ITEMS 4
+ 
+ class curloc : public sistack_t
+ {
+ public:
+-  DEFINE_CURLOC_HELPERS(friend)
+   ea_t ea;                // Address
+   ushort x,y;             // coords on the screen
+   ushort lnnum;           // number of line for the current address
+@@ -51,7 +36,6 @@
+   void setx(int xx)              { x  = ushort(xx); }
+   void jump_push(bool try_to_unhide, ea_t ea=BADADDR, int lnnum=0, int x=0, int y=0)
+         { curloc_jump_push(this, try_to_unhide, ea, lnnum, x, y); }
+-  void push(void);
+   bool pop(bool try_tohide)
+         { return curloc_pop(this, try_tohide); }
+   bool get(size_t depth)
+@@ -85,11 +69,6 @@
+ 
+ #define MAX_MARK_SLOT   1024     // Max number of marked locations
+ 
+-void init_marks(void);
+-void term_marks(void);
+-void change_jumps_stack_format(void);
+-void move_marks(ea_t from, ea_t to, asize_t size);
+-
+ #pragma pack(pop)
+ #endif // __MOVES_HPP
+ 
+diff -ur --strip-trailing-cr include-orig/nalt.hpp include-swig/nalt.hpp
+--- include-orig/nalt.hpp	2006-07-31 18:49:14.142240000 -0700
++++ include-swig/nalt.hpp	2006-07-31 18:49:13.691592000 -0700
+@@ -37,9 +37,6 @@
+ 
+ // these nodes keep information about serial autogenerated names,
+ // like loc_1, loc_2, etc.
+-extern netnode nmSerEA;     // translation loc(n) -> EA
+-extern netnode nmSerN;      // translation EA -> n, loc(n)
+-extern size_t maxSerialName;
+ 
+ idaman netnode ida_export_data net_patch;
+                             // node with information about patched bytes
+@@ -212,8 +209,6 @@
+ // Structure ID for structures in structure definitions.
+ // Don't use, see: get_typeinfo()
+ NALT_EA(get_strid,_set_strid,_del_strid, NALT_STRUCT)
+-void set_strid(ea_t ea, tid_t tid);
+-void del_strid(ea_t ea);
+ 
+ // 'seen' flags (used internally by the kernel)
+ // Don't use.
+@@ -336,7 +331,6 @@
+ // number of bytes purged from the stack when a function is called indirectly
+ // These functions may be used if necessary.
+ NALT_EA(get_ind_purged,set_ind_purged,del_ind_purged,NALT_PURGE)
+-bool set_purged(ea_t ea, int value); // use this instead of set_ind_purged
+ 
+ // type of string
+ // Don't use, see: get_typeinfo()
+diff -ur --strip-trailing-cr include-orig/name.hpp include-swig/name.hpp
+--- include-orig/name.hpp	2006-07-31 18:49:14.162268800 -0700
++++ include-swig/name.hpp	2006-07-31 18:49:13.691592000 -0700
+@@ -18,9 +18,6 @@
+ //      data item) can not have names.
+ //
+ 
+-#include <help.h>
+-#include <lines.hpp>
+-
+ class func_t;                   // #include <funcs.hpp>
+ 
+ 
+@@ -571,21 +568,6 @@
+ idaman ea_t ida_export get_debug_name_ea(const char *name);
+ 
+ 
+-//      Kernel only functions and data
+-
+-size_t addDummyName(ea_t ea);   // don't call this directly!
+-
+-void convert_debug_names_to_normal(ea_t ea1, ea_t ea2);
+-void convert_name_formats(void); // should be called when processor type is changed
+-void showhide_name(ea_t ea);   // show or hide name from the list depending
+-                                // on the type of the name
+-
+-bool clear_lname_bit(ea_t ea, bool setflags);
+-void fix_new_name(ea_t ea,const char *oldname,const char *newname, bool lname);
+-bool rename(tid_t id,const char *name);  // rename structure member
+-void move_names(ea_t from, ea_t to, asize_t size); // move name list and dummy names
+-bool is_exit_name(const char *name);
+-
+ typedef int ignore_name_def_t;
+ const ignore_name_def_t
+   ignore_none   = 0,
+@@ -602,9 +584,6 @@
+                           const char *name,
+                           ulong disable_mask);
+ 
+-class Varray;
+-extern Varray *nameVa;
+-
+ // Array of valid identifier characters.
+ // The kernel doesn't allow digits as first character of a name anyway.
+ // This array is initialized with information from ida.cfg.
+diff -ur --strip-trailing-cr include-orig/offset.hpp include-swig/offset.hpp
+--- include-orig/offset.hpp	2006-07-31 18:49:14.172283200 -0700
++++ include-swig/offset.hpp	2006-07-31 18:49:13.691592000 -0700
+@@ -158,8 +158,6 @@
+ // If fails, return BADADDR
+ 
+ 
+-ea_t calc_probable_base(ea_t ea);
+-
+ // Try to calculate the offset base
+ // 2 bases are checked: current ds and cs
+ // If fails, return BADADDR
+diff -ur --strip-trailing-cr include-orig/queue.hpp include-swig/queue.hpp
+--- include-orig/queue.hpp	2006-07-31 18:49:14.192312000 -0700
++++ include-swig/queue.hpp	2006-07-31 18:49:13.691592000 -0700
+@@ -77,26 +77,11 @@
+ idaman void ida_export QueueDel(qtype_t type,ea_t ea);
+ 
+ 
+-// Remove an address from all problem lists
+-//      ea   - linear address
+-
+-void QueueDel(ea_t ea);
+-
+-
+ // Get queue problem description string
+ 
+ idaman const char *ida_export get_long_queue_name(qtype_t type);
+ idaman const char *ida_export get_short_queue_name(qtype_t type);
+ 
+ 
+-// The kernel only functions:
+-
+-       void init_queue(void);
+-inline void save_queue(void) {}
+-       void term_queue(void);
+-
+-void move_problems(ea_t from, ea_t to, asize_t size);
+-void queue_del(ea_t ea1, ea_t ea2);
+-
+ #pragma pack(pop)
+ #endif  //  _QUEUE_HPP
+diff -ur --strip-trailing-cr include-orig/segment.hpp include-swig/segment.hpp
+--- include-orig/segment.hpp	2006-07-31 18:49:14.212340800 -0700
++++ include-swig/segment.hpp	2006-07-31 18:49:13.691592000 -0700
+@@ -330,37 +330,6 @@
+ idaman sel_t ida_export find_selector(ea_t base);
+ 
+ 
+-// Enumerate all selectors from the translation table
+-// This function call 'func' for each selector in the translation table
+-// If 'func' returns non-zero code, enumeration is stopped and this code
+-// is returned.
+-//      func - callback function
+-//              sel  - selector number
+-//              para - selector mapping
+-// returns 0 or code returned by 'func'.
+-
+-idaman int ida_export enumerate_selectors(int (idaapi* func)(sel_t sel,ea_t para));
+-
+-// Enumerate all segments with the specified selector
+-// This function will call the callback function 'func' for each
+-// segment that has the specified selector. Enumeration starts
+-// from the last segment and stops at the first segment (reverse order).
+-// If the callback function 'func' returns a value != BADADDR, the
+-// enumration is stopped and this value is returned to the caller.
+-//      selector - segments that have this selector are enumerated
+-//      func     - callback function
+-//                      s    - pointer to segment structure
+-//                      ud   - user data
+-//      ud       - pointer to user data. this pointer will be passed
+-//                 to the callback function
+-// returns: BADADDR or the value returned by the callback function 'func'.
+-
+-idaman ea_t ida_export enumerate_segments_with_selector(
+-                                sel_t selector,
+-                                ea_t (idaapi* func)(segment_t *s,void *ud),
+-                                void *ud);
+-
+-
+ // Get pointer to segment structure, in: segment selector
+ // This function find a segment by its selector. If there are several
+ // segments with the same selectors, the last one will be returned
+@@ -631,13 +600,6 @@
+ //      S E G M E N T   G R O U P S
+ //-------------------------------------------------------------------------
+ 
+-// Initialize groups.
+-// The kernel calls this function at the start of work.
+-
+-       void init_groups(void);
+-inline void save_groups(void) {}
+-inline void term_groups(void) {}
+-
+ 
+ // Create a new group of segments (used OMF files)
+ //      grp - selector of group segment (segment type is SEG_GRP)
+@@ -855,20 +817,6 @@
+ }
+ 
+ 
+-// Get colored segment name expression in the form (segname + displacement)
+-//      from - linear address of instruction operand or data referring to
+-//             the name. This address will be used to get fixup information,
+-//             so it should point to exact position of operand in the
+-//             instruction.
+-//      sel  - value to convert to segment expression
+-//      buf   - output buffer to hold segment expression
+-//      bufsize - size of the output buffer
+-// returns: NULL-can't convert to segment expression
+-//          othersize pointer to 'buf'
+-
+-char *get_segm_expr(ea_t from, sel_t sel, char *buf, size_t bufsize);
+-
+-
+ //-------------------------------------------------------------------------
+ //      S E G M E N T   C L A S S E S  A N D  T Y P E S
+ //-------------------------------------------------------------------------
+@@ -963,47 +911,6 @@
+ 
+ idaman bool ida_export set_segm_addressing(segment_t *s, size_t bitness);
+ 
+-
+-//-------------------------------------------------------------------------
+-//      I N T E R N A L   K E R N E L   F U N C T I O N S
+-//-------------------------------------------------------------------------
+-
+-ssize_t get_based_segm_expr(ea_t from, sel_t basesel, sel_t sel, char *buf, size_t bufsize);
+-
+-
+-// Create internal kernel structures for program segmentation
+-// Called when a new file is loaded by the kernel.
+-//      file - name of input file
+-
+-void    createSegmentation(const char *file);
+-
+-
+-// Initialize work with segments
+-// Called by the kernel itself.
+-//      file - name of input file
+-//      newfile - is a new file being loaded for disassembly?
+-
+-void    initSegment     (const char *file, bool newfile);
+-
+-
+-// Flush kernel caches with segmentation information
+-
+-void    save_segments   (void);
+-
+-
+-// Terminate work with the segments
+-// Called by the kernel at the end of work.
+-
+-void    termSegment     (void);
+-
+-void    DeleteAllSegments(void);
+-
+-
+-// Delete segments created by the debugger
+-
+-void delete_debug_segments(void);
+-
+-
+ // Does the address belong to a debug segment?
+ 
+ inline bool is_debugger_segm(ea_t ea)
+diff -ur --strip-trailing-cr include-orig/sistack.hpp include-swig/sistack.hpp
+--- include-orig/sistack.hpp	2006-07-31 18:49:14.222355200 -0700
++++ include-swig/sistack.hpp	2006-07-31 18:49:13.691592000 -0700
+@@ -27,21 +27,12 @@
+ 
+ public:
+   ~sistack_t(void)          { if ( code != BADADDR ) flush(); }
+-  int  attach(const char *name);
+-  void create(const char *name);
+-  void kill(void);
+ 
+   void flush(void)      { sistack_t_flush(this); }
+ 
+   size_t size(void) const { return chunk*ST_SIZE+ptr; }
+   void doempty(void)    { chunk = ptr = 0; }
+ 
+-  void push(uval_t x);
+-  uval_t pop(void);
+-  uval_t get(size_t depth); // return the value of the item at a given depth.
+-                            // return BADADDR if the item doesn't exist (depth > size()).
+-  uval_t top(void);
+-  uval_t dup(void)      { uval_t x = top(); push(x); return x; }
+ };
+ 
+ #pragma pack(pop)
+diff -ur --strip-trailing-cr include-orig/srarea.hpp include-swig/srarea.hpp
+--- include-orig/srarea.hpp	2006-07-31 18:49:14.232369600 -0700
++++ include-swig/srarea.hpp	2006-07-31 18:49:13.691592000 -0700
+@@ -46,13 +46,14 @@
+ 
+   sel_t _sRegs[SREG_NUM];
+   uchar _tags [SREG_NUM];
++
++public:
++
+ #define SR_inherit      1               // the value is inherited from the previous area
+ #define SR_user         2               // the value is specified by the user
+ #define SR_auto         3               // the value is determined by IDA
+ #define SR_autostart    4               // used as SR_auto for segment starting address
+ 
+-public:
+-
+ // get value of a segment register for the area (range of addresses)
+ //      n - number of segment register. This number is index to
+ //          the array of register names (ph.regNames). All segment registers
+@@ -186,16 +187,5 @@
+ //-------------------------------------------------------------------------
+ // For the kernel only:
+ 
+-int createSRarea(ea_t sEA, ea_t eEA);
+-int killSRareas(ea_t sEA, ea_t eEA);
+-int delSRarea(ea_t EA);                   // delete segment regs area
+-int SRareaStart(ea_t sEA, ea_t newstart); // set new start of srarea
+-int SRareaEnd(ea_t sEA, ea_t newend);     // set new end of srarea
+-void repairSRarea(ea_t EA);
+-
+-void SRinit(const char *file);
+-void SRterm(void);
+-void SRsave(void);
+-
+ #pragma pack(pop)
+ #endif // _SRAREA_HPP
+diff -ur --strip-trailing-cr include-orig/strlist.hpp include-swig/strlist.hpp
+--- include-orig/strlist.hpp	2006-07-31 18:49:14.242384000 -0700
++++ include-swig/strlist.hpp	2006-07-31 18:49:13.691592000 -0700
+@@ -26,10 +26,6 @@
+   uchar only_7bit;
+   uchar ignore_heads;
+   ea_t ea1, ea2;
+-  // private functions:
+-  bool setup_strings_window(void);
+-  void save_config(void);
+-  void restore_config(void);
+ };
+ 
+ // Information about one string from the string list
+@@ -60,9 +56,5 @@
+ // Get nth element of the string list (n=0,,get_strlist_qty()-1)
+ idaman bool ida_export get_strlist_item(int n, string_info_t *si);
+ 
+-
+-// internal kernel functions
+-void move_strings(ea_t from, ea_t to, asize_t size);
+-
+ #pragma pack(pop)
+ #endif // _STRLIST_HPP
+diff -ur --strip-trailing-cr include-orig/struct.hpp include-swig/struct.hpp
+--- include-orig/struct.hpp	2006-07-31 18:49:14.252398400 -0700
++++ include-swig/struct.hpp	2006-07-31 18:49:13.691592000 -0700
+@@ -23,9 +23,7 @@
+ //--------------------------------------------------------------------------
+ // struct, union
+ 
+-void            init_struc(void);
+ inline void     save_struc(void) {}
+-void            term_struc(void);
+ 
+ class member_t
+ {
+diff -ur --strip-trailing-cr include-orig/ua.hpp include-swig/ua.hpp
+--- include-orig/ua.hpp	2006-07-31 18:49:14.262412800 -0700
++++ include-swig/ua.hpp	2006-07-31 18:49:13.691592000 -0700
+@@ -223,13 +223,13 @@
+ 
+ // The following unions keep other information about the operand
+ 
+-  union
+-  {
++//  union
++//  {
+     ushort reg;                 // number of register (o_reg)
+     ushort phrase;              // number of register phrase (o_phrase,o_displ)
+                                 // you yourself define numbers of phrases
+                                 // as you like
+-  };
++//  };
+ 
+   bool is_reg(ushort r) const { return type == o_reg && reg == r; }
+ 
+@@ -238,7 +238,7 @@
+ 
+ // VALUE
+ 
+-  union {
++//  union {
+     uval_t value;               // value of operand (o_imm)
+                                 // outer displacement (o_displ+OF_OUTER_DISP)
+ 
+@@ -246,12 +246,12 @@
+         ushort low;             // your convenience only
+         ushort high;
+     } value_shorts;
+-  };
++ // };
+ 
+ 
+ // VIRTUAL ADDRESS (OFFSET WITHIN THE SEGMENT)
+ 
+-  union {
++//  union {
+     ea_t addr;                  // virtual address pointed or used by the operand
+                                 // (o_mem,o_displ,o_far,o_near)
+ 
+@@ -259,18 +259,18 @@
+         ushort low;             // your convenience only
+         ushort high;
+     } addr_shorts;
+-  };
++//  };
+ 
+ 
+ // IDP SPECIFIC INFORMATION
+ 
+-  union {
++//  union {
+     ea_t specval;               // This field may be used as you want.
+     struct {                    // this structure is defined for your convenience only
+         ushort low;             // IBM PC: segment register number (o_mem,o_far,o_near)
+         ushort high;            // IBM PC: segment selector value  (o_mem,o_far,o_near)
+     } specval_shorts;
+-  };
++//  };
+ 
+ // The following fields are used only in idp modules
+ // You may use them as you want to store additional information about
+@@ -484,7 +484,7 @@
+ // Before using any out/Out functions, you should initialize the
+ // output buffer:
+ 
+-idaman void ida_export init_output_buffer(char *buf, size_t bufsize);
++//idarub idaman void ida_export init_output_buffer(char *buf, size_t bufsize);
+ 
+ 
+ // After using all out/Out functions to form the output string
+@@ -595,22 +595,6 @@
+ #define OOF_NOBNOT      0x0400      // prohibit use of binary not
+ 
+ 
+-// Extract immediate value from the operand according to the specified flags
+-// x    - operand
+-// outf - combination of OOF_.. flags
+-// extend_sign - should the sign be extended?
+-// dtyp_ptr - pointer to the dtyp which will be filled by this function
+-// nbytes_ptr - pointer to the 'nbytes' which will be filled by this function
+-//              number of bytes required to store the value
+-// This is an internal function. Use get_operand_immvals()
+-
+-uval_t get_immval(const op_t &x,
+-                  int outf=0,
+-                  bool extend_sign=false,
+-                  char *dtyp_ptr=NULL,
+-                  size_t *nbytes_ptr=NULL);
+-
+-
+ // Output a character with COLOR_SYMBOL color.
+ 
+ idaman void ida_export out_symbol(char c);
+@@ -712,7 +696,7 @@
+ //      bufsize - size of the output buffer
+ // return true-ok, false-can't represent as floating point number
+ 
+-idaman bool ida_export out_real(void *v, int size, char *buf, size_t bufsize);
++//idarub idaman bool ida_export out_real(void *v, int size, char *buf, size_t bufsize);
+ 
+ 
+ // Output a number with appropriate color.
+@@ -870,27 +854,6 @@
+                                   // then decode it and returns its address
+ 
+ 
+-//      Construct a macro instruction
+-//      This function may be called from ana()
+-//      to generate a macro instruction
+-//
+-//      The real work is done by the 'build_macro()' callback
+-//      This callback should be provided by the module writer.
+-//
+-//      Here we just create the instruction in the database when the macro
+-//      generation is turned on/off.
+-//
+-// enable - enable macro generation
+-// build_macro - try to grow the instruction in 'cmd' to a macro
+-//               returns: true=the macro instruction is generated in 's'
+-//                        false=no macro
+-// returns: true=macro is built
+-//          false=no macro
+-
+-idaman bool ida_export construct_macro(bool enable,
+-                        bool (idaapi *build_macro)(insn_t &s, bool may_go_forward));
+-
+-
+ // Guess the jump table address (ibm pc specific)
+ 
+ idaman ea_t ida_export guess_table_address(void);
+@@ -908,22 +871,5 @@
+ 
+ idaman int ida_export get_spoiled_reg(const ulong *regs, size_t n);
+ 
+-int ua_emu(ea_t ea);              // Emulate instruction, detect execution
+-                                  // flows, data references etc.
+-                                  // Returns length of instruction in bytes.
+-
+-int ua_out(ea_t ea, bool create_insn);   // Generate text representation of the insn
+-                                         // Returns length of instruction in bytes
+-                                         // 0 - bad instruction
+-                                         // create_insn: modify database if necessary
+-
+-bool ua_use_fixup(void);          // apply fixups to the instruction
+-                                  // 'cmd' should be valid
+-
+-int ua_ana(ea_t ea);              // Analyze bytes, fill cmd structure
+-                                  // Returns length of command. 0 - bad op
+-                                  // Also converts to code, uses fixups, increases segments etc
+-                                  // This function is only for the kernel
+-                                  // Use ua_code() instead
+ #pragma pack(pop)
+ #endif // _UA_HPP
+diff -ur --strip-trailing-cr include-orig/xref.hpp include-swig/xref.hpp
+--- include-orig/xref.hpp	2006-07-31 18:49:14.272427200 -0700
++++ include-swig/xref.hpp	2006-07-31 18:49:13.691592000 -0700
+@@ -146,13 +146,6 @@
+ // If you need only data references, pass XREF_DATA flag to first()
+ // You may not modify contents xrefblk_t structure! It is read only.
+ 
+-// Helper functions. Should not be called directly!
+-struct xrefblk_t;
+-idaman bool ida_export xrefblk_t_first_from(xrefblk_t *,ea_t from,int flags);
+-idaman bool ida_export xrefblk_t_next_from(xrefblk_t *);
+-idaman bool ida_export xrefblk_t_first_to(xrefblk_t *,ea_t to,int flags);
+-idaman bool ida_export xrefblk_t_next_to(xrefblk_t *);
+-
+ 
+ struct xrefblk_t        // structure to enumerate all xrefs
+ {
+@@ -200,14 +193,6 @@
+ 
+ //-------------------------------------------------------------------------
+ 
+-// This variable will contains type of the last xref returned
+-// by the following functions. It is not exported, so if you need to know
+-// the cross reference type, please use the xrefblk_t structure to enumerate
+-// the cross references.
+-
+-extern char lastXR;
+-
+-
+ // Get first data referenced from the specified address
+ //      from    - linear address of referencing instruction or data
+ // returns: linear address of first (lowest) data referenced from
+@@ -317,12 +302,7 @@
+ //-------------------------------------------------------------------------
+ 
+ idaman int ida_export create_xrefs_from(ea_t ea);  // returns 0: no item at ea
+-void create_xrefs_from_data(ea_t ea);
+ idaman void ida_export delete_all_xrefs_from(ea_t ea,int expand);
+-void delete_data_xrefs_from(ea_t ea);
+-void delete_code_xrefs_from(ea_t ea,int expand);
+-
+-int destroy_if_align(ea_t ea);   // 1-alignment is destroyed
+ 
+ #pragma pack(pop)
+ #endif // _XREF_HPP

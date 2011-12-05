@@ -1,0 +1,142 @@
+IdaRub, what what
+
+Alpha 0.8, June 2006
+
+
+ -- Introduction
+
+IdaRub is an IDA plugin that wraps the IDA SDK for remote and local access from
+the Ruby programming language.  It works on both IDA 4.9 and 5.0, although 5.0
+API additions are not accessible from IdaRub.
+
+
+ -- Installation
+
+The IdaRub plugin requires a native win32 (not cygwin) install of Ruby.  I
+suggest the Ruby "one click installer".  The IdaRub client libraries should
+work on any Ruby installation (cygwin, native win32, linux, osx, etc).
+
+After installing the Ruby interpreter, to install the IdaRub plugin, simply
+copy the idarub.plw plugin to your IDA plugin directory.  No installation
+should be necessary for the IdaRub client libraries.
+
+
+ -- Usage
+
+After installing the IdaRub plugin, it should be accessible from the IDA plugin
+menu, or from the hotkey ALT-F7.  This will present a GUI allowing you to start
+IdaRub as a server (for remote access), or to load a IdaRub script locally.
+The dialog also presents a few options (which only apply to server mode).  The
+options allow you to pick which IP address the server will listen on, and the
+range of ports to try to listen on.  While IdaRub only requires a single port,
+the range port option is make it easier to run multiple IdaRub server
+instances.  The IdaRub plugin will incrementally try the ports in the range,
+and will print which port it bound to if successful.
+
+To use the IdaRub client libraries, you simply instantiate a IdaRub object,
+which will be covered below.  You should see a message in the IDA message
+window when a new client has connected, and when a client disconnects.  The
+IdaRub plugin supports unlimited simultaneous connections.
+
+
+ -- Programming with the IdaRub client libraries
+
+The first step to accessing the IdaRub plugin remotely, is instantiating an
+IdaRub object, and telling it how to connect to the IdaRub plugin.  This can
+be done two ways.  The first way, is to call IdaRub.new_client(host, port),
+which will return an IdaRub session object (responsible for managing the
+connection).  In order to get the IDA front object (which corresponds to the
+SDK), you simple call the front method on the session object.  So for example:
+
+require 'idarub'
+sess = IdaRub.new_client('127.0.0.1', 1234)
+ida  = sess.front
+
+An alternative, and generally easier approach, is to use the auto_client
+method.  There are two conveniences with this.  First, for remote scripts, it
+will automatically look at ARGV[0], and parse the host/port in the form of
+host:port, where the port is optional.  It will then remove this entry from
+ARGV, so any additional options passed to your script will start at ARGV[0].
+
+Another advantage is that calling auto_client from a locally running script
+will detect the script is running locally, and return the IDA SDK object.  This
+allows simple scripts that use auto_client to work both remotely and locally
+with no additional logic.
+
+The auto_client method returns both the session and the IDA object, returning
+the IDA object first.  This is convenient for simple scripts, where you don't
+need to worry about any of the functionality accessible through the session
+object.  An example of using auto_client that will work both remotely and
+locally:
+
+require 'idarub'
+ida, = IdaRub.auto_client
+puts "Hello there! Your current ea: 0x%08x" % ida.get_screen_ea
+
+If you want a copy of the session object (so you can disconnect from the
+server, or other operations accessible through this object), you can simple
+do:
+
+ida, sess = IdaRub.auto_client
+
+Now, once you have the IDA object, you are going to want to call IDA SDK
+functions.  This is generally quite simple, although there is a few things
+to beware of:
+
+Generally in Ruby, you would access a constant with code like "Foo::BAR", to
+access the BAR constant in the Foo module.  However, for several technical
+reasons, you need to access IDA constants differently for IdaRub.  In order to
+access constants, you should treat them as if they were methods.  For example,
+to access the BADADDR constant defined by the SDK, you would do:
+
+ida.BADADDR
+
+This also applies for accessing classes, most likely for creating a new
+instance of a class.  For example:
+
+ida.Curloc.new
+
+will create a new "curloc" class. Notice how the constant names are just the
+normal IDA classes, except the first letter is capitalized.  This should apply
+to all IDA classes (Insn_t, Sistack_t, etc, etc).
+
+You might encounter an issue trying to call a remote method, but a local
+method on RefObject exists by the same name.  An example of this would be
+listing the methods on a remote object.  If you call obj.methods, you'll get
+the method listing for the local object (RefObject).  If you want the call to
+be remoted, you can do it two different ways.  You can call send_remote, ie
+obj.send_remote(:methods), which works the same as send, but will pass any
+calls to the remote object.  The more convenient way is to simply prefix
+the method with "remote_".  If you want to call the "methods" method on an obj,
+you can simply call obj.remote_methods, and it will get dispatched as the
+"methods" method on the remote object.
+
+
+ -- Building the IdaRub IDA plugin
+
+Note: Building requires VC++ 6.0, Ruby, cygwin, SWIG 1.3.28 (or higher?)
+
+Unfortunately the build process for the IDA plugin is a bit messy, so try to
+stay with me.  The first step is to copy the entire "idarub" directory to the
+"plugins" directory in the IDA SDK.  The way the library and header includes
+work require this to be just so.  You should end up with a path something like
+"sdk/plugins/idarub/plugin/idarub.cpp", etc.
+
+The next thing to make sure is that you have the Ruby include and library
+directories added to Visual Studio (Tools -> Options -> Directories).  For
+"Include files", I have "c:\ruby\lib\ruby\1.8\i386-mswin32".  For "Library
+files" I have "c:\ruby\bin" and "c:\ruby\lib".
+
+Since it would be rude to DataRescue to bundle copies of the modified headers,
+the changes are distributed as a patch.  Copy the SDK "include" directory (the
+directory itself, not just it's contents) to the "swig" directory.  Then run
+"patch.sh", and this should copy the appropiate headers from the includes and
+patch them to work for the SWIG bindings.
+
+Next, go to the "plugin" directory, and run swig.sh and inline.sh.  The source
+should now be ready to be built.  Open idarub.dsw in Visual Studio.  Select the
+appropriate build configuration (Build -> Set Active Configuration).  Hit F7
+and hope everything goes well.  If the build failed, check to make sure it's
+finding the IDA headers/libraries and the Ruby (one-click) headers/libraries.
+
+The generated plugin should be located at bin/idarub.plw.  Rinse and repeat.
